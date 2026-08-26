@@ -3,7 +3,7 @@
 Week 1 Studio Onboarding project for WebWorks Studio.
 
 ## Developer
-Julius McKinnon
+YOUR NAME
 
 ## Role
 Junior Web Developer
