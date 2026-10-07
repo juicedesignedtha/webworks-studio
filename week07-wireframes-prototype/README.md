@@ -91,7 +91,7 @@ Document at least two accessibility decisions you planned before development.
 
 ## Week 8 Handoff
 In Week 8, the client moves into a common production starter. You will implement two JavaScript behaviors connected to Maya's needs:
-1. an accessible explanation/disclosure for trail difficulty; and
+1. an accessible explanation/disclosure for trail difficulty.
 2. form validation and user feedback for a hike-planning form.
 
 Your Week 7 prototype may explore these or another related solution. The important continuity is the user need and interaction reasoning.
