@@ -81,7 +81,7 @@ planForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   feedback.textContent =
-    `Plan ready for trail.`;
+    `Plan ready for ${field.value}.`;
 
 });
 
