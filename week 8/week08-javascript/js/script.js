@@ -81,7 +81,7 @@ planForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   feedback.textContent =
-    `Plan ready for ${trail.value}.`;
+    `Plan ready for ${trail.value} ${experience.value} ${hours.value}.`;
 
 });
 
