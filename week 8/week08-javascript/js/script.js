@@ -23,7 +23,7 @@ const infoButton =
   document.querySelector("#difficulty-toggle");
 
 const infoPanel =
-  document.querySelector("#difficulty-toggle");
+  document.querySelector("#difficulty-panel");
 
 infoButton.addEventListener("click", () => {
 
