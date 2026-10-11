@@ -70,7 +70,7 @@ const trailChoice =
   document.querySelector(".field");
 
 const feedback =
-  document.querySelector(".feedback");
+  document.querySelector("#form-feedback");
 
 planForm.addEventListener("submit", (event) => {
 
@@ -81,7 +81,7 @@ planForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   feedback.textContent =
-    `Plan ready for ${trailChoice.value}.`;
+    `Plan ready for trail.`;
 
 });
 
