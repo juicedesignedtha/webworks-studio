@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan a Hike | Hill Country Trail Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#">Hill Country Trail Guide</a>
+      <nav aria-label="Main navigation">
+        <a href="#trails">Trails</a>
+        <a href="#difficulty-help">Difficulty Guide</a>
+        <a href="#planner">Plan a Hike</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Hill Country Trail Guide</p>
+        <h1>Choose a trail with confidence.</h1>
+        <p>Compare the practical details first, then plan a hike that fits your experience and available time.</p>
+      </div>
+    </section>
+
+    <section class="wrap section" id="trails" aria-labelledby="trail-title">
+      <p class="eyebrow">Popular choices</p>
+      <h2 id="trail-title">Trail comparison</h2>
+
+      <div class="trail-grid">
+        <article class="trail-card">
+          <h3>Juniper Creek Loop</h3>
+          <dl class="facts">
+            <div><dt>Difficulty</dt><dd>Easy</dd></div>
+            <div><dt>Distance</dt><dd>4.8 miles</dd></div>
+            <div><dt>Estimated time</dt><dd>2–2.5 hours</dd></div>
+            <div><dt>Elevation gain</dt><dd>620 ft</dd></div>
+            <div><dt>Dogs</dt><dd>Check current park rules</dd></div>
+          </dl>
+        </article>
+
+        <article class="trail-card">
+          <h3>Painted Bluff Trail</h3>
+          <dl class="facts">
+            <div><dt>Difficulty</dt><dd>Moderate</dd></div>
+            <div><dt>Distance</dt><dd>3.2 miles</dd></div>
+            <div><dt>Estimated time</dt><dd>2–3 hours</dd></div>
+            <div><dt>Elevation gain</dt><dd>840 ft</dd></div>
+            <div><dt>Dogs</dt><dd>No</dd></div>
+          </dl>
+        </article>
+
+        <article class="trail-card">
+          <h3>Live Oak Ridge</h3>
+          <dl class="facts">
+            <div><dt>Difficulty</dt><dd>Easy</dd></div>
+            <div><dt>Distance</dt><dd>6.1 miles</dd></div>
+            <div><dt>Estimated time</dt><dd>3–3.5 hours</dd></div>
+            <div><dt>Elevation gain</dt><dd>410 ft</dd></div>
+            <div><dt>Dogs</dt><dd>Yes, leashed</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section help-card" id="difficulty-help" aria-labelledby="difficulty-title">
+      <div>
+        <p class="eyebrow">Plain-language help</p>
+        <h2 id="difficulty-title">Not sure what “Easy” or “Moderate” means?</h2>
+      </div>
+
+      <button
+        class="button secondary"
+        id="difficulty-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="difficulty-panel">
+        What does difficulty mean?
+      </button>
+
+      <div id="difficulty-panel" class="difficulty-panel" hidden>
+        <h3>Difficulty guide</h3>
+        <p><strong>Easy:</strong> Generally suitable for newer hikers who are comfortable walking on natural surfaces. Distance, heat, and elevation still matter.</p>
+        <p><strong>Moderate:</strong> May include sustained climbing, rougher surfaces, exposed areas, longer distance, or conditions that require more stamina and preparation.</p>
+        <p>Difficulty labels are only a starting point. Compare distance, estimated time, elevation gain, conditions, and your own experience.</p>
+      </div>
+    </section>
+
+    <section class="wrap section planner" id="planner" aria-labelledby="planner-title">
+      <p class="eyebrow">Trip planning</p>
+      <h2 id="planner-title">Plan your Saturday hike</h2>
+      <p>Tell us a little about your plan. This classroom form does not send data to a server.</p>
+
+      <form id="hike-form">
+        <div class="field-grid">
+          <div class="field">
+            <label for="trail">Trail</label>
+            <select id="trail" name="trail" required>
+              <option value="">Choose a trail</option>
+              <option>Juniper Creek Loop</option>
+              <option>Painted Bluff Trail</option>
+              <option>Live Oak Ridge</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="experience">Hiking experience</label>
+            <select id="experience" name="experience" required>
+              <option value="">Choose experience level</option>
+              <option>Beginner</option>
+              <option>Some experience</option>
+              <option>Experienced</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="hours">Time available</label>
+            <select id="hours" name="hours" required>
+              <option value="">Choose available time</option>
+              <option value="2">About 2 hours</option>
+              <option value="3">About 3 hours</option>
+              <option value="4">4+ hours</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="check-row">
+          <input id="confirm" name="confirm" type="checkbox" required>
+          <label for="confirm">I understand that I should check current weather, trail conditions, and official park information before leaving home.</label>
+        </div>
+
+        <button class="button" type="submit">Review my plan</button>
+      </form>
+
+      <div id="form-feedback" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Hill Country Trail Guide · A WebWorks Studio fictional client</p>
+    </div>
+  </footer>
+</body>
+</html>
