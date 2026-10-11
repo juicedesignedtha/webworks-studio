@@ -19,6 +19,26 @@
 // PART 1 — DIFFICULTY DISCLOSURE
 // ======================================================
 
+const infoButton =
+  document.querySelector("#difficulty-toggle");
+
+const infoPanel =
+  document.querySelector("#difficulty-toggle");
+
+infoButton.addEventListener("click", () => {
+
+  const isOpen =
+    infoButton.getAttribute("aria-expanded") === "true";
+
+  infoPanel.hidden = isOpen;
+
+  infoButton.setAttribute(
+    "aria-expanded",
+    String(!isOpen)
+  );
+
+});
+
 // TODO 1:
 // Select the disclosure button and the panel it controls.
 
