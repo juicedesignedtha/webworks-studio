@@ -63,6 +63,28 @@ infoButton.addEventListener("click", () => {
 // PART 2 — HIKE PLANNING FORM
 // ======================================================
 
+const planForm =
+  document.querySelector("#hike-form");
+
+const trailChoice =
+  document.querySelector(".field");
+
+const feedback =
+  document.querySelector(".feedback");
+
+planForm.addEventListener("submit", (event) => {
+
+  if (!planForm.checkValidity()) {
+    return;
+  }
+
+  event.preventDefault();
+
+  feedback.textContent =
+    `Plan ready for ${trailChoice.value}.`;
+
+});
+
 // TODO 6:
 // Select the form and the feedback region.
 
