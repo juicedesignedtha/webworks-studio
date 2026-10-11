@@ -81,7 +81,7 @@ planForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   feedback.textContent =
-    `Plan ready for ${form-feedback.value}.`;
+    `Plan ready for ${hours.value}.`;
 
 });
 
