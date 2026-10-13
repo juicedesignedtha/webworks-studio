@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission City Makers Market</title>
+  <meta name="description" content="Mission City Makers Market event guide featuring local makers, event information, and visitor planning details.">
+  <link rel="stylesheet" href="css/output.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.1/dist/cdn.min.js"></script>
+</head>
+
+<body class="min-h-screen text-slate-800">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:text-slate-900 focus:shadow-lg">
+    Skip to main content
+  </a>
+
+  <header class="border-b border-stone-300 bg-[#173946] text-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5">
+      <a href="#" class="text-xl font-bold tracking-tight text-white">Mission City Makers Market</a>
+      <nav aria-label="Primary navigation">
+        <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+          <li><a class="rounded-sm underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white" href="#makers">Makers</a></li>
+          <li><a class="rounded-sm underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white" href="#plan">Plan Your Visit</a></li>
+          <li><a class="rounded-sm underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white" href="#questions">Questions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="bg-[#173946] text-white">
+      <div class="mx-auto grid max-w-6xl gap-8 px-5 py-14 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
+        <div>
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-[#bce3d9]">Saturday · South San Antonio</p>
+          <h1 class="max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">Meet the makers behind the things you love.</h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-200">Shop ceramics, prints, textiles, woodcraft, and more from independent South Texas artists. Come for the market, stay for demonstrations, food, and conversation.</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#makers" class="rounded-lg bg-[#f0b45b] px-5 py-3 font-bold text-[#142b3a] hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-white/50">Explore makers</a>
+            <a href="#plan" class="rounded-lg border border-white/60 px-5 py-3 font-bold text-white hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/50">Plan your visit</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20">
+          <h2 class="text-xl font-bold">Next Market</h2>
+          <dl class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Date</dt><dd class="mt-1 text-lg">Saturday, October 17</dd></div>
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Time</dt><dd class="mt-1 text-lg">10:00 AM–4:00 PM</dd></div>
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Location</dt><dd class="mt-1 text-lg">Mission Plaza Arts Hall</dd></div>
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Admission</dt><dd class="mt-1 text-lg">Free</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="makers" class="mx-auto max-w-6xl px-5 py-14" aria-labelledby="makers-heading">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#246b63]">Featured Makers</p>
+        <h2 id="makers-heading" class="mt-2 text-3xl font-bold text-[#142b3a]">Find something made locally.</h2>
+        <p class="mt-3 text-lg text-slate-600">The market includes returning artists and first-time vendors. Use this content as the basis for your Alpine-powered exploration tool.</p>
+      </div>
+
+      <!-- TODO: REQUIRED ALPINE INTERACTION
+           Add one purposeful Alpine-powered exploration tool here.
+           Requirements:
+           - x-data
+           - at least one user event
+           - at least one additional reactive directive
+           - visible, understandable interface response
+           - semantic, keyboard-accessible controls
+           Do NOT simply paste the classroom playground unchanged. -->
+
+      <div class="mt-8 rounded-xl border-2 border-dashed border-[#7da59c] bg-[#eef5f4] p-5">
+        <p class="font-bold text-[#174f49]">Student work area: Alpine interaction</p>
+        <p class="mt-1 text-sm leading-6 text-slate-700">Decide what would genuinely help a visitor explore these makers, then implement that behavior using Alpine.</p>
+      </div>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article data-category="ceramics" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
+          <img src="images/ceramics.svg" alt="Handmade ceramic mugs displayed at a market table" class="aspect-[3/2] w-full object-cover">
+          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Ceramics</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Cielo Clay Studio</h3><p class="mt-2 text-sm leading-6 text-slate-600">Small-batch mugs, bowls, and serving pieces inspired by desert colors and South Texas skies.</p><p class="mt-4 text-sm"><strong>Booth:</strong> A12</p></div>
+        </article>
+
+        <article data-category="prints" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
+          <img src="images/printmaking.svg" alt="Colorful art prints hanging in a local maker booth" class="aspect-[3/2] w-full object-cover">
+          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Printmaking</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Rio Press Co.</h3><p class="mt-2 text-sm leading-6 text-slate-600">Hand-pulled prints featuring native plants, neighborhood architecture, and regional landmarks.</p><p class="mt-4 text-sm"><strong>Booth:</strong> B04</p></div>
+        </article>
+
+        <article data-category="textiles" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
+          <img src="images/textiles.svg" alt="Handwoven textiles and fabric goods at a market stand" class="aspect-[3/2] w-full object-cover">
+          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Textiles</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Luna Loom Works</h3><p class="mt-2 text-sm leading-6 text-slate-600">Handwoven scarves, table runners, and small home goods in natural fibers and muted colors.</p><p class="mt-4 text-sm"><strong>Booth:</strong> C07</p></div>
+        </article>
+
+        <article data-category="woodcraft" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
+          <img src="images/woodcraft.svg" alt="Handcrafted wooden serving boards on display" class="aspect-[3/2] w-full object-cover">
+          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Woodcraft</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Mesquite &amp; Main</h3><p class="mt-2 text-sm leading-6 text-slate-600">Serving boards, trays, and small household pieces made from reclaimed and locally sourced wood.</p><p class="mt-4 text-sm"><strong>Booth:</strong> D03</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="plan" class="border-y border-stone-300 bg-white" aria-labelledby="plan-heading">
+      <div class="mx-auto grid max-w-6xl gap-8 px-5 py-14 lg:grid-cols-2">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#246b63]">Plan Your Visit</p>
+          <h2 id="plan-heading" class="mt-2 text-3xl font-bold text-[#142b3a]">Know before you go.</h2>
+          <p class="mt-3 text-lg text-slate-600">The market is designed for a relaxed Saturday visit. Most guests spend between 60 and 90 minutes browsing.</p>
+          <dl class="mt-7 grid gap-5 sm:grid-cols-2">
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Parking</dt><dd class="mt-2 text-sm leading-6 text-slate-600">Free parking is available in the east lot. Accessible spaces are closest to the main entrance.</dd></div>
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Food</dt><dd class="mt-2 text-sm leading-6 text-slate-600">Two local food vendors and a coffee cart will be open during market hours.</dd></div>
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Payment</dt><dd class="mt-2 text-sm leading-6 text-slate-600">Most vendors accept cards and digital payments. Some also accept cash.</dd></div>
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Accessibility</dt><dd class="mt-2 text-sm leading-6 text-slate-600">The venue has a step-free entrance, accessible restrooms, and seating throughout the hall.</dd></div>
+          </dl>
+        </div>
+
+        <aside class="rounded-2xl bg-[#173946] p-7 text-white" aria-labelledby="demo-heading">
+          <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#bce3d9]">Live Demonstrations</p>
+          <h3 id="demo-heading" class="mt-2 text-2xl font-bold">Maker Demo Schedule</h3>
+          <ul class="mt-6 space-y-5">
+            <li class="border-b border-white/20 pb-5"><p class="font-bold">11:00 AM · Wheel-Thrown Pottery</p><p class="mt-1 text-sm leading-6 text-slate-200">Cielo Clay Studio demonstrates centering and shaping a small vessel.</p></li>
+            <li class="border-b border-white/20 pb-5"><p class="font-bold">12:30 PM · Block Printing</p><p class="mt-1 text-sm leading-6 text-slate-200">Rio Press Co. demonstrates carving, inking, and hand-printing a simple design.</p></li>
+            <li><p class="font-bold">2:00 PM · Weaving Basics</p><p class="mt-1 text-sm leading-6 text-slate-200">Luna Loom Works introduces warp, weft, texture, and simple loom techniques.</p></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="questions" class="mx-auto max-w-6xl px-5 py-14" aria-labelledby="questions-heading">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#246b63]">Visitor Questions</p>
+        <h2 id="questions-heading" class="mt-2 text-3xl font-bold text-[#142b3a]">Help visitors find answers quickly.</h2>
+        <p class="mt-3 text-lg text-slate-600">This section contains useful content that could benefit from a reusable interface component.</p>
+      </div>
+
+      <!-- TODO: REQUIRED PRELINE COMPONENT
+           Choose ONE appropriate Preline component and adapt it here.
+           Possible directions: accordion, tabs, modal, dropdown, alert,
+           or another instructor-approved Preline component.
+           Use official Preline documentation. -->
+
+      <div class="mt-8 rounded-xl border-2 border-dashed border-amber-500 bg-amber-50 p-5">
+        <p class="font-bold text-amber-900">Student work area: Preline component</p>
+        <p class="mt-1 text-sm leading-6 text-amber-950">Choose a component because it improves this client content—not simply because the component looks interesting.</p>
+      </div>
+
+      <div class="mt-7 grid gap-5 md:grid-cols-2">
+        <article class="rounded-xl border border-stone-300 bg-white p-5"><h3 class="text-lg font-bold text-[#142b3a]">Can I bring children?</h3><p class="mt-2 text-sm leading-6 text-slate-600">Yes. The market is family-friendly. Children should remain with an adult, especially during live demonstrations.</p></article>
+        <article class="rounded-xl border border-stone-300 bg-white p-5"><h3 class="text-lg font-bold text-[#142b3a]">Are pets allowed?</h3><p class="mt-2 text-sm leading-6 text-slate-600">Only trained service animals are allowed inside Mission Plaza Arts Hall.</p></article>
+        <article class="rounded-xl border border-stone-300 bg-white p-5"><h3 class="text-lg font-bold text-[#142b3a]">Can I buy items online later?</h3><p class="mt-2 text-sm leading-6 text-slate-600">Many vendors sell online, but availability varies. Ask the maker for a business card or website before you leave.</p></article>
+        <article class="rounded-xl border border-stone-300 bg-white p-5"><h3 class="text-lg font-bold text-[#142b3a]">Is the event indoors?</h3><p class="mt-2 text-sm leading-6 text-slate-600">Yes. The maker booths and demonstrations are indoors. Food vendors are located on the covered south patio.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#102a35] text-slate-200">
+    <div class="mx-auto max-w-6xl px-5 py-8">
+      <p class="font-bold text-white">Mission City Makers Market</p>
+      <p class="mt-2 text-sm">A fictional WebWorks Studio client created for Module 9 practice.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/vendor/preline.js"></script>
+</body>
+</html>
