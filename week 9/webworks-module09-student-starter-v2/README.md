@@ -155,53 +155,53 @@ Replace each TODO before submitting.
 
 ## Project Summary
 
-TODO
+This was a VERY chanlanging one for me. I struggled with the systems and evrything but eventaullty got something up and running. I used an accordion build for the bottom, and a category selector for the top.
 
 ## Alpine Decision
 
 **User/client need:**  
-TODO
+they needed an easy way to find makers at Mission City Makers Market based on their interests or a specific maker's name. 
 
 **Alpine directives used:**  
-TODO
+x-data, x-model, @click, x, x-text, x-show.
 
 **Why Alpine was appropriate:**  
-TODO
+It provides simple, reactive interactions directly into the HTML without requiring a large JavaScript framework. It makes the maker directory interactive while still keeping the code relatively lightweight and easier to maintain.
 
 ## Preline Decision
 
 **Preline component selected:**  
-TODO
+The accordion component was selected for the FAQ section.
 
 **Problem it solves:**  
-TODO
+Visitors can't find answers to common questions about the market quickly.
 
 **How you adapted it:**  
-TODO
+The accordion organizes information into expandable sections, allowing visitors to open the questions they want answered without having every answer displayed at once.
 
 ## Accessibility Notes
 
-1. TODO
-2. TODO
+1. I used semantic HTML elements, labeled form controls, and real buttons so users can navigate and interact with the maker filters and FAQ accordion using a keyboard.
+2. I used readable text, clear interface labels, and visible feedback, including an updated result count and a message when no makers match the search.
 
 ## Testing Notes
 
-**Narrow viewport:** TODO  
-**Medium viewport:** TODO  
-**Wide viewport:** TODO  
-**Keyboard testing:** TODO  
-**Browser console:** TODO
+**Narrow viewport:** The layout is designed to fit mobile screens, with readable text and controls that allow users to search and filter makers without horizontal overflow.  
+**Medium viewport:** The maker cards and FAQ section should remain readable and organized as the available screen width increases. 
+**Wide viewport:** The page should use the available space effectively while keeping the maker listings and FAQ section organized and easy to navigate.  
+**Keyboard testing:** The search field, craft category selector, clear filters button, and FAQ buttons should be reachable using the Tab key. The controls should be usable with the keyboard, and focus should remain visible during navigation.  
+**Browser console:** Check the browser console for JavaScript errors, failed resource requests, or Alpine.js and Preline initialization issues. No console errors have been confirmed yet.
 
 ## Dependencies
 
-**Alpine.js — how used:** TODO  
-**Preline UI — how used:** TODO  
-**Tailwind CSS — how used:** TODO
+**Alpine.js — how used:** Used to create a reactive maker directory with a search field, craft category filter, dynamically displayed maker cards, an updated result count, and a clear filters button.
+**Preline UI — how used:** Used to implement an accordion component for the FAQ section, allowing visitors to expand and collapse answers to common market questions.  
+**Tailwind CSS — how used:** Used to style the maker directory and FAQ accordion with utility classes for spacing, typography, borders, layout, and responsive behavior across mobile, tablet, and desktop screens.
 
 ## Official Documentation Used
 
-- Alpine.js: TODO
-- Preline UI: TODO
+- Alpine.js: https://alpinejs.dev/start-here
+- Preline UI: Accordion: https://preline.co/plugins/html/accordion.html
 
 # Official References
 
