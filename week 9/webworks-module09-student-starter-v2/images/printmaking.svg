@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<title id="title">Colorful art prints hanging in a local maker booth</title>
+<desc id="desc">Decorative placeholder illustration for the Mission City Makers Market starter.</desc>
+<rect width="900" height="600" fill="#587c78"/>
+<circle cx="720" cy="120" r="150" fill="#ffffff" opacity=".18"/>
+<circle cx="150" cy="510" r="190" fill="#ffffff" opacity=".12"/>
+<rect x="115" y="120" width="670" height="360" rx="36" fill="#fffaf2" opacity=".94"/>
+<text x="450" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" fill="#23333c">Mission City</text>
+<text x="450" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#23333c">Makers Market</text>
+<text x="450" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#44545c">Student starter image</text>
+</svg>

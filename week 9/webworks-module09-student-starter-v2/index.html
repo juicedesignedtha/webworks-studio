@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission City Makers Market</title>
+  <meta name="description" content="Mission City Makers Market event guide featuring local makers, event information, and visitor planning details.">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.1/dist/cdn.min.js"></script>
+</head>
+
+<body class="min-h-screen text-slate-800">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:text-slate-900 focus:shadow-lg">
+    Skip to main content
+  </a>
+
+  <header class="border-b border-stone-300 bg-[#173946] text-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5">
+      <a href="#" class="text-xl font-bold tracking-tight text-white">Mission City Makers Market</a>
+      <nav aria-label="Primary navigation">
+        <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+          <li><a class="rounded-sm underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white" href="#makers">Makers</a></li>
+          <li><a class="rounded-sm underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white" href="#plan">Plan Your Visit</a></li>
+          <li><a class="rounded-sm underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white" href="#questions">Questions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="bg-[#173946] text-white">
+      <div class="mx-auto grid max-w-6xl gap-8 px-5 py-14 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
+        <div>
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-[#bce3d9]">Saturday · South San Antonio</p>
+          <h1 class="max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">Meet the makers behind the things you love.</h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-200">Shop ceramics, prints, textiles, woodcraft, and more from independent South Texas artists. Come for the market, stay for demonstrations, food, and conversation.</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#makers" class="rounded-lg bg-[#f0b45b] px-5 py-3 font-bold text-[#142b3a] hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-white/50">Explore makers</a>
+            <a href="#plan" class="rounded-lg border border-white/60 px-5 py-3 font-bold text-white hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/50">Plan your visit</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20">
+          <h2 class="text-xl font-bold">Next Market</h2>
+          <dl class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Date</dt><dd class="mt-1 text-lg">Saturday, October 17</dd></div>
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Time</dt><dd class="mt-1 text-lg">10:00 AM–4:00 PM</dd></div>
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Location</dt><dd class="mt-1 text-lg">Mission Plaza Arts Hall</dd></div>
+            <div><dt class="text-sm font-semibold text-[#bce3d9]">Admission</dt><dd class="mt-1 text-lg">Free</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="makers" class="mx-auto max-w-6xl px-5 py-14" aria-labelledby="makers-heading">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#246b63]">Featured Makers</p>
+        <h2 id="makers-heading" class="mt-2 text-3xl font-bold text-[#142b3a]">Find something made locally.</h2>
+        <p class="mt-3 text-lg text-slate-600">The market includes returning artists and first-time vendors. Use this content as the basis for your Alpine-powered exploration tool.</p>
+      </div>
+
+      <div
+        x-data="{
+          selectedCategory: 'all',
+          searchTerm: '',
+          makers: [
+            { category: 'ceramics', label: 'Ceramics', name: 'Cielo Clay Studio', booth: 'A12', image: 'images/ceramics.svg', alt: 'Handmade ceramic mugs displayed at a market table', description: 'Small-batch mugs, bowls, and serving pieces inspired by desert colors and South Texas skies.' },
+            { category: 'prints', label: 'Printmaking', name: 'Rio Press Co.', booth: 'B04', image: 'images/printmaking.svg', alt: 'Colorful art prints hanging in a local maker booth', description: 'Hand-pulled prints featuring native plants, neighborhood architecture, and regional landmarks.' },
+            { category: 'textiles', label: 'Textiles', name: 'Luna Loom Works', booth: 'C07', image: 'images/textiles.svg', alt: 'Handwoven textiles and fabric goods at a market stand', description: 'Handwoven scarves, table runners, and small home goods in natural fibers and muted colors.' },
+            { category: 'woodcraft', label: 'Woodcraft', name: 'Mesquite & Main', booth: 'D03', image: 'images/woodcraft.svg', alt: 'Handcrafted wooden serving boards on display', description: 'Serving boards, trays, and small household pieces made from reclaimed and locally sourced wood.' }
+          ],
+          get filteredMakers() {
+            const term = this.searchTerm.trim().toLowerCase();
+            return this.makers.filter((maker) => {
+              const matchesCategory = this.selectedCategory === 'all' || maker.category === this.selectedCategory;
+              const searchableText = `${maker.name} ${maker.label} ${maker.description} ${maker.booth}`.toLowerCase();
+              return matchesCategory && searchableText.includes(term);
+            });
+          }
+        }"
+        class="mt-8"
+      >
+        <div class="grid gap-4 rounded-2xl border border-[#c7d8d3] bg-[#eef5f4] p-5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] sm:items-end">
+          <div>
+            <label for="maker-category" class="mb-2 block text-sm font-bold text-[#174f49]">Browse by craft</label>
+            <select id="maker-category" x-model="selectedCategory" class="w-full rounded-lg border-stone-300 bg-white text-slate-800 focus:border-[#246b63] focus:ring-[#246b63]">
+              <option value="all">All makers</option>
+              <option value="ceramics">Ceramics</option>
+              <option value="prints">Printmaking</option>
+              <option value="textiles">Textiles</option>
+              <option value="woodcraft">Woodcraft</option>
+            </select>
+          </div>
+          <div>
+            <label for="maker-search" class="mb-2 block text-sm font-bold text-[#174f49]">Search makers</label>
+            <input id="maker-search" type="search" x-model="searchTerm" placeholder="Try “mugs” or “booth A12”" class="w-full rounded-lg border-stone-300 bg-white text-slate-800 placeholder:text-slate-500 focus:border-[#246b63] focus:ring-[#246b63]">
+          </div>
+          <p class="text-sm text-slate-700 sm:col-span-2" aria-live="polite">
+            Showing <span class="font-bold" x-text="filteredMakers.length"></span>
+            <span x-text="filteredMakers.length === 1 ? 'maker' : 'makers'"></span>.
+            <button type="button" @click="selectedCategory = 'all'; searchTerm = ''" class="ml-1 font-bold text-[#174f49] underline underline-offset-2 hover:text-[#102a35] focus:outline-none focus:ring-2 focus:ring-[#246b63] focus:ring-offset-2">Clear filters</button>
+          </p>
+        </div>
+
+        <div
+          x-ref="makerCarousel"
+          x-init="$nextTick(() => window.initMakerSplide($refs.makerCarousel))"
+          class="splide mt-6"
+          aria-label="Featured local makers"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <template x-for="maker in filteredMakers" :key="maker.category">
+                <li class="splide__slide h-auto pb-2">
+                  <article class="h-full overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
+                    <img :src="maker.image" :alt="maker.alt" class="aspect-[3/2] w-full object-cover">
+                    <div class="p-5">
+                      <p class="text-sm font-bold uppercase tracking-wide text-[#246b63]" x-text="maker.label"></p>
+                      <h3 class="mt-2 text-xl font-bold text-[#142b3a]" x-text="maker.name"></h3>
+                      <p class="mt-2 text-sm leading-6 text-slate-600" x-text="maker.description"></p>
+                      <p class="mt-4 text-sm"><strong>Booth:</strong> <span x-text="maker.booth"></span></p>
+                    </div>
+                  </article>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </div>
+        <p x-show="filteredMakers.length === 0" x-cloak class="mt-6 rounded-xl border border-stone-300 bg-white p-6 text-slate-700" role="status">
+          No makers match those filters. Try another craft or search term.
+        </p>
+      </div>
+
+    </section>
+
+    <section id="plan" class="border-y border-stone-300 bg-white" aria-labelledby="plan-heading">
+      <div class="mx-auto grid max-w-6xl gap-8 px-5 py-14 lg:grid-cols-2">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#246b63]">Plan Your Visit</p>
+          <h2 id="plan-heading" class="mt-2 text-3xl font-bold text-[#142b3a]">Know before you go.</h2>
+          <p class="mt-3 text-lg text-slate-600">The market is designed for a relaxed Saturday visit. Most guests spend between 60 and 90 minutes browsing.</p>
+          <dl class="mt-7 grid gap-5 sm:grid-cols-2">
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Parking</dt><dd class="mt-2 text-sm leading-6 text-slate-600">Free parking is available in the east lot. Accessible spaces are closest to the main entrance.</dd></div>
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Food</dt><dd class="mt-2 text-sm leading-6 text-slate-600">Two local food vendors and a coffee cart will be open during market hours.</dd></div>
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Payment</dt><dd class="mt-2 text-sm leading-6 text-slate-600">Most vendors accept cards and digital payments. Some also accept cash.</dd></div>
+            <div class="rounded-xl bg-[#f7f4ee] p-5"><dt class="font-bold text-[#142b3a]">Accessibility</dt><dd class="mt-2 text-sm leading-6 text-slate-600">The venue has a step-free entrance, accessible restrooms, and seating throughout the hall.</dd></div>
+          </dl>
+        </div>
+
+        <aside class="rounded-2xl bg-[#173946] p-7 text-white" aria-labelledby="demo-heading">
+          <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#bce3d9]">Live Demonstrations</p>
+          <h3 id="demo-heading" class="mt-2 text-2xl font-bold">Maker Demo Schedule</h3>
+          <ul class="mt-6 space-y-5">
+            <li class="border-b border-white/20 pb-5"><p class="font-bold">11:00 AM · Wheel-Thrown Pottery</p><p class="mt-1 text-sm leading-6 text-slate-200">Cielo Clay Studio demonstrates centering and shaping a small vessel.</p></li>
+            <li class="border-b border-white/20 pb-5"><p class="font-bold">12:30 PM · Block Printing</p><p class="mt-1 text-sm leading-6 text-slate-200">Rio Press Co. demonstrates carving, inking, and hand-printing a simple design.</p></li>
+            <li><p class="font-bold">2:00 PM · Weaving Basics</p><p class="mt-1 text-sm leading-6 text-slate-200">Luna Loom Works introduces warp, weft, texture, and simple loom techniques.</p></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="questions" class="mx-auto max-w-6xl px-5 py-14" aria-labelledby="questions-heading">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#246b63]">Visitor Questions</p>
+        <h2 id="questions-heading" class="mt-2 text-3xl font-bold text-[#142b3a]">Help visitors find answers quickly.</h2>
+        <p class="mt-3 text-lg text-slate-600">This section contains useful content that could benefit from a reusable interface component.</p>
+      </div>
+
+      <div class="hs-accordion-group mt-8 space-y-3" data-hs-accordion-always-open>
+        <div class="hs-accordion active overflow-hidden rounded-xl border border-stone-300 bg-white" id="visitor-faq-one">
+          <h3>
+            <button type="button" id="visitor-faq-1-toggle" class="hs-accordion-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold text-[#142b3a] hover:bg-[#f7f4ee] focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#246b63]" aria-expanded="true" aria-controls="visitor-faq-one-content">
+              <span>Can I bring children?</span>
+              <svg class="hs-accordion-active:rotate-180 size-5 shrink-0 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div id="visitor-faq-one-content" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="visitor-faq-1-toggle">
+            <div class="px-5 pb-5 text-sm leading-6 text-slate-600">Yes. The market is family-friendly. Children should remain with an adult, especially during live demonstrations.</div>
+          </div>
+        </div>
+
+        <div class="hs-accordion overflow-hidden rounded-xl border border-stone-300 bg-white" id="visitor-faq-two">
+          <h3>
+            <button type="button" id="visitor-faq-2-toggle" class="hs-accordion-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold text-[#142b3a] hover:bg-[#f7f4ee] focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#246b63]" aria-expanded="false" aria-controls="visitor-faq-two-content">
+              <span>Are pets allowed?</span>
+              <svg class="hs-accordion-active:rotate-180 size-5 shrink-0 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div id="visitor-faq-two-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="visitor-faq-2-toggle">
+            <div class="px-5 pb-5 text-sm leading-6 text-slate-600">Only trained service animals are allowed inside Mission Plaza Arts Hall.</div>
+          </div>
+        </div>
+
+        <div class="hs-accordion overflow-hidden rounded-xl border border-stone-300 bg-white" id="visitor-faq-three">
+          <h3>
+            <button type="button" id="visitor-faq-3-toggle" class="hs-accordion-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold text-[#142b3a] hover:bg-[#f7f4ee] focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#246b63]" aria-expanded="false" aria-controls="visitor-faq-three-content">
+              <span>Can I buy items online later?</span>
+              <svg class="hs-accordion-active:rotate-180 size-5 shrink-0 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div id="visitor-faq-three-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="visitor-faq-3-toggle">
+            <div class="px-5 pb-5 text-sm leading-6 text-slate-600">Many vendors sell online, but availability varies. Ask the maker for a business card or website before you leave.</div>
+          </div>
+        </div>
+
+        <div class="hs-accordion overflow-hidden rounded-xl border border-stone-300 bg-white" id="visitor-faq-four">
+          <h3>
+            <button type="button" id="visitor-faq-4-toggle" class="hs-accordion-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold text-[#142b3a] hover:bg-[#f7f4ee] focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#246b63]" aria-expanded="false" aria-controls="visitor-faq-four-content">
+              <span>Is the event indoors?</span>
+              <svg class="hs-accordion-active:rotate-180 size-5 shrink-0 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div id="visitor-faq-four-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="visitor-faq-4-toggle">
+            <div class="px-5 pb-5 text-sm leading-6 text-slate-600">Yes. The maker booths and demonstrations are indoors. Food vendors are located on the covered south patio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#102a35] text-slate-200">
+    <div class="mx-auto max-w-6xl px-5 py-8">
+      <p class="font-bold text-white">Mission City Makers Market</p>
+      <p class="mt-2 text-sm">A fictional WebWorks Studio client created for Module 9 practice.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/vendor/preline.js"></script>
+</body>
+</html>
