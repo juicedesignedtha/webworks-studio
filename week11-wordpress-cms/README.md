@@ -103,7 +103,7 @@ Did you need to modify the header, footer, navigation, template, template part, 
 
 Explain how this update demonstrates that routine content can change without rebuilding the site's global structure.
 
-[Write 2–4 sentences here.]
+[I was able to go to whatever page held this information, and click on the information to re-type it. The information is not difficult to find, which makes the process even more seemless.]
 
 ---
 
@@ -113,23 +113,23 @@ Document the quality checks you completed.
 
 ## Headings
 
-[Briefly explain how you verified logical heading structure.]
+[I made sure to use a visual hiearchy for each heading and sub-heading.]
 
 ## Images
 
-[Briefly explain how you handled meaningful alternative text.]
+[I made sure to take a good look at each image, and connect it to the information it aligns with.]
 
 ## Links & Buttons
 
-[Briefly explain how you checked link/button text.]
+[The buttons and links where verified, by a long process of back and forth on the live webpage.]
 
 ## Keyboard
 
-[Briefly explain how you tested keyboard navigation and visible focus.]
+[I did my best to navigate as much of the page as I could with just the arrows & spacebar.]
 
 ## Responsive Layout
 
-[Briefly explain how you checked narrow-screen behavior.]
+[WordPress had a very handy feature that allowed my to view my live page in different formats, to ensure proper fitment.]
 
 ---
 
@@ -171,42 +171,42 @@ Keep each response concise and specific to this project.
 
 Why is WordPress an appropriate solution for Southtown Community Arts?
 
-[Write 2–4 sentences here.]
+[They have constant events, and announcements, which means their page needs constant changes. Rather than hiring a new web developer each time they con go in and add their own post and make simple edits, without wasting money or time. ]
 
 ## Editable Content
 
 What information should Southtown Community Arts staff be able to update routinely?
 
-[Write 2–4 sentences here.]
+[They should be able to update any paragraph text with the click of a button, They should also be able to add/publish post to there news page.]
 
 ## Reusable Structure
 
 What site element did you make reusable or site-wide, and why?
 
-[Write 2–4 sentences here.]
+[The footer and the Heading were both made site wide, because they both include useful links as well as important information like the brandding & logo
 
 ## Client Protection
 
 What design or architecture decision helps the site remain consistent when staff members make routine updates?
 
-[Write 2–4 sentences here.]
+[The theme as well as things like the pattern. A constant CTA along with a consistent color scheme allows for changes without re-branding.]
 
 ---
 
 # Final Handoff Check
 
-- [ ] Home, Programs, and About are published as Pages.
-- [ ] The supplied announcement is published as a Post.
-- [ ] Primary navigation works in the required order.
-- [ ] One meaningful reusable Pattern is present.
-- [ ] The required site-wide structure adjustment is complete.
-- [ ] I completed the supplied `CLIENT-UPDATE.md` request after the main build.
-- [ ] The client update did not require unnecessary global-structure changes.
-- [ ] Headings are logical.
-- [ ] Informative images have meaningful alternative text.
-- [ ] Link and button labels are understandable.
-- [ ] Keyboard focus is visible.
-- [ ] Narrow-screen behavior was checked.
-- [ ] All six evidence images display correctly in this README.
-- [ ] All four Developer Handoff responses are complete.
-- [ ] I committed and pushed this Week 11 handoff folder.
+- [x] Home, Programs, and About are published as Pages.
+- [x] The supplied announcement is published as a Post.
+- [x] Primary navigation works in the required order.
+- [x] One meaningful reusable Pattern is present.
+- [x] The required site-wide structure adjustment is complete.
+- [x] I completed the supplied `CLIENT-UPDATE.md` request after the main build.
+- [x] The client update did not require unnecessary global-structure changes.
+- [x] Headings are logical.
+- [x] Informative images have meaningful alternative text.
+- [x] Link and button labels are understandable.
+- [x] Keyboard focus is visible.
+- [x] Narrow-screen behavior was checked.
+- [x] All six evidence images display correctly in this README.
+- [x] All four Developer Handoff responses are complete.
+- [x] I committed and pushed this Week 11 handoff folder.
