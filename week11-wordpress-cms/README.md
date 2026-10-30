@@ -59,13 +59,19 @@ Explain why this content belongs as a Post rather than a Page.
 Describe the required Site Editor change you completed.
 
 **Change:**  
-[Describe the change.]
+[ I added "Southtown Community Arts
+San Antonio, Texas
+
+hello@southtownarts.example
+
+Creative learning. Shared locally." 
+to the footer]
 
 **Where It Was Made:**  
-[Header, footer, navigation, template part, etc.]
+[The footer]
 
 **Why It Belongs at the Site Level:**  
-[Explain why this should affect multiple pages rather than one page only.]
+[There should be a footer a bottom of each page not just one.]
 
 ---
 
@@ -77,19 +83,21 @@ Complete `CLIENT-UPDATE.md` after the primary site build, then document the resu
 
 Briefly identify the client change you completed.
 
-[Write here.]
+[Changed this sentence:> Short-format workshops introduce participants to a specific medium or technique.
+To: > Short-format workshops introduce participants to a focused medium or technique through guided, beginner-friendly practice.
+]
 
 ## Where I Made the Update
 
 What WordPress content-editing area did you use?
 
-[Write here.]
+[Programs page, Home page.]
 
 ## Structure Check
 
 Did you need to modify the header, footer, navigation, template, template part, or reusable pattern? Explain.
 
-[Write here.]
+[No, because this was just small information that was easy to go in and change, simple enough for a non-coder.]
 
 ## Maintainability Result
 
