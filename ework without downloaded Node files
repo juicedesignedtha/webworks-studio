@@ -1,0 +1,34 @@
+ bootstrap-play/bootstrap play                      |   1 [32m+[m
+ gitignore                                          |  26 [32m+++[m
+ legacy-modernization                               |   1 [32m+[m
+ week 6                                             |   1 [32m+[m
+ .../.gitignore                                     |   3 [32m+[m
+ .../webworks-module09-student-starter-v2/README.md | 145 [32m++++++++++[m[31m--[m
+ week04-tailwind                                    |   1 [32m+[m
+ week05-bootstrap/week05-bootstrap                  |   1 [32m+[m
+ week07-wireframes-prototype/week-7                 |   1 [32m+[m
+ .../week10-react/.devcontainer/devcontainer.json   |   6 [32m+[m
+ week10- react/week10-react/.gitignore              |  20 [32m++[m
+ week11/week11-wordpress-cms/CLIENT-CONTENT.md      | 255 [32m+++++++++++++++++++++[m
+ week11/week11-wordpress-cms/CLIENT-UPDATE.md       |  46 [32m++++[m
+ .../Images/20f53dff04956448c5696698361913ad.jpg    | Bin [31m0[m -> [32m181590[m bytes
+ .../Images/2d538f85a3dbe27f96365b962f05c72f.jpg    | Bin [31m0[m -> [32m129438[m bytes
+ .../Images/2f8904a199aa1a78372856ca8beed3b0.jpg    | Bin [31m0[m -> [32m150265[m bytes
+ .../Images/5e134a7b5a3bd35b2be9aca30dd6c156.jpg    | Bin [31m0[m -> [32m128411[m bytes
+ .../Images/5f7ee8924428e8e5dd64550cac2d7775.jpg    | Bin [31m0[m -> [32m95743[m bytes
+ .../Images/a1d9d0cfc3f692f72872f521a32f6c66.jpg    | Bin [31m0[m -> [32m373474[m bytes
+ .../Images/a674a2ae8218741e2e56eee151687b08.jpg    | Bin [31m0[m -> [32m71915[m bytes
+ .../Images/ac9475123ac01506ec09cdc5a21cf937.jpg    | Bin [31m0[m -> [32m253767[m bytes
+ .../Images/b06b3ee16aed25eaa9f2a504d8c45339.jpg    | Bin [31m0[m -> [32m128481[m bytes
+ .../Images/deb9c443a2b1899cfea2d986279e86d6.jpg    | Bin [31m0[m -> [32m67563[m bytes
+ .../Images/e3f07a8aed95a56426646285e8f3c02a.jpg    | Bin [31m0[m -> [32m191139[m bytes
+ week11/week11-wordpress-cms/README.md              | 204 [32m+++++++++++++++++[m
+ week11/week11-wordpress-cms/START-HERE.md          |  87 [32m+++++++[m
+ week11/week11-wordpress-cms/evidence/.gitkeep      |   0
+ week11/week11-wordpress-cms/evidence/home-page.png | Bin [31m0[m -> [32m512760[m bytes
+ .../week11-wordpress-cms/evidence/mobile-page.png  | Bin [31m0[m -> [32m218990[m bytes
+ .../week11-wordpress-cms/evidence/navigation.png   | Bin [31m0[m -> [32m5553[m bytes
+ week11/week11-wordpress-cms/evidence/news-post.png | Bin [31m0[m -> [32m128914[m bytes
+ .../evidence/programs-page.png                     | Bin [31m0[m -> [32m323722[m bytes
+ .../evidence/reusable-pattern.png                  | Bin [31m0[m -> [32m188619[m bytes
+ 33 files changed, 782 insertions(+), 16 deletions(-)
