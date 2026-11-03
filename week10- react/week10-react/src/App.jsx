@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // TODO: Import ServiceCard after you complete the component.
-// import ServiceCard from './components/ServiceCard.jsx'
+import ServiceCard from './components/ServiceCard.jsx'
 
 const services = [
   {
@@ -60,22 +60,12 @@ const services = [
 ]
 
 function App() {
-  /*
-    TODO 1 — STATE
-    Create selectedCategory state with useState().
-    Start with "all".
+  const [selectedCategory, setSelectedCategory] = useState('all')
 
-    Example concept:
-    const [selectedCategory, setSelectedCategory] = useState(...)
-  */
-
-  /*
-    TODO 2 — FILTERED DATA
-    Create a filteredServices variable.
-
-    If selectedCategory is "all", use the full services array.
-    Otherwise, keep only services whose category matches selectedCategory.
-  */
+  const filteredServices =
+    selectedCategory === 'all'
+      ? services
+      : services.filter((service) => service.category === selectedCategory)
 
   return (
     <>
@@ -126,79 +116,47 @@ function App() {
               <h3 id="filter-heading">Filter services</h3>
 
               <div className="filter-buttons">
-                {/*
-                  TODO 3 — FILTER BUTTON EVENTS + ACCESSIBLE STATE
-
-                  Connect each button to selectedCategory state.
-
-                  Requirements:
-                  - Use onClick to update state.
-                  - Use aria-pressed to communicate which filter is active.
-                  - Keep these as native <button> elements.
-                */}
-
-                <button type="button">All</button>
-                <button type="button">Health</button>
-                <button type="button">Housing</button>
-                <button type="button">Community</button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedCategory('all')}
+                  aria-pressed={selectedCategory === 'all'}
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedCategory('health')}
+                  aria-pressed={selectedCategory === 'health'}
+                >
+                  Health
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedCategory('housing')}
+                  aria-pressed={selectedCategory === 'housing'}
+                >
+                  Housing
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedCategory('community')}
+                  aria-pressed={selectedCategory === 'community'}
+                >
+                  Community
+                </button>
               </div>
             </div>
 
-            {/*
-              CURRENT STARTER STATE:
-              The six cards below repeat nearly identical JSX.
-
-              TODO 4 — COMPONENT + PROPS + MAP
-              1. Complete src/components/ServiceCard.jsx.
-              2. Import ServiceCard at the top of this file.
-              3. Delete the repeated card markup below.
-              4. Render filteredServices with map().
-              5. Pass service data as props.
-              6. Use service.id as the stable React key.
-            */}
-
             <div className="service-grid">
-              <article className="service-card">
-                <p className="service-category">Health</p>
-                <h3>Health Resource Navigation</h3>
-                <p>Get help identifying local clinics, wellness programs, and community health resources.</p>
-                <p className="service-detail">Appointments available by phone or in person.</p>
-              </article>
-
-              <article className="service-card">
-                <p className="service-category">Health</p>
-                <h3>Food Support</h3>
-                <p>Connect with food pantries, nutrition resources, and benefit-navigation support.</p>
-                <p className="service-detail">Same-week referral support may be available.</p>
-              </article>
-
-              <article className="service-card">
-                <p className="service-category">Housing</p>
-                <h3>Housing Navigation</h3>
-                <p>Find local rental resources, housing counseling, and emergency-support information.</p>
-                <p className="service-detail">Eligibility varies by program.</p>
-              </article>
-
-              <article className="service-card">
-                <p className="service-category">Housing</p>
-                <h3>Home Repair Assistance</h3>
-                <p>Locate nonprofit and public programs that may assist with qualifying home repairs.</p>
-                <p className="service-detail">Income and location requirements may apply.</p>
-              </article>
-
-              <article className="service-card">
-                <p className="service-category">Community</p>
-                <h3>Volunteer Match</h3>
-                <p>Explore local volunteer opportunities based on schedule, interests, and availability.</p>
-                <p className="service-detail">Opportunities are updated throughout the month.</p>
-              </article>
-
-              <article className="service-card">
-                <p className="service-category">Community</p>
-                <h3>Community Events</h3>
-                <p>Find free and low-cost workshops, neighborhood events, and community programs.</p>
-                <p className="service-detail">New events are added weekly.</p>
-              </article>
+              {filteredServices.map((service) => (
+                <ServiceCard
+                  key={service.id}
+                  categoryLabel={service.categoryLabel}
+                  title={service.title}
+                  description={service.description}
+                  detail={service.detail}
+                />
+              ))}
             </div>
           </div>
         </section>
