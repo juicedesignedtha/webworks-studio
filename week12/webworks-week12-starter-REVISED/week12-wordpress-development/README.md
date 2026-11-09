@@ -154,20 +154,20 @@ Write approximately **75–100 words** responding to:
 
 > Give one example of a change you intentionally handled globally and one change you intentionally left as editable content. How does that separation help Southtown Community Arts maintain the site without losing design consistency?
 
-[Write your response here.]
+[I handled the color palette, typography, button states, and header styling globally through WordPress Styles to keep the website consistent across all pages. I left the page text, images, and program descriptions as editable content so Southtown Community Arts can make routine updates without needing to change code. I also created a reusable Program Callout Pattern to simplify future updates. Separating global design from editable content makes the website easier to maintain while allowing the client to update information without losing the established brand identity.]
 
 ---
 
 # Final Handoff Check
 
-- [ ] I continued the Week 11 Southtown site rather than rebuilding it.
-- [ ] I applied the approved palette and typography direction systematically.
-- [ ] I used global controls for global decisions.
-- [ ] I created or significantly customized one branded reusable pattern.
-- [ ] I made one appropriate site-wide structure customization.
-- [ ] I completed exactly one controlled development-level modification.
-- [ ] I did not add PHP, plugins, custom blocks, or a child-theme build for this assignment.
-- [ ] Visitor and editor QA are complete.
-- [ ] All five evidence screenshots display in this README.
-- [ ] I completed the maintainability reflection.
-- [ ] I committed and pushed the Week 12 handoff folder.
+- [x] I continued the Week 11 Southtown site rather than rebuilding it.
+- [x] I applied the approved palette and typography direction systematically.
+- [x] I used global controls for global decisions.
+- [x] I created or significantly customized one branded reusable pattern.
+- [x] I made one appropriate site-wide structure customization.
+- [x] I completed exactly one controlled development-level modification.
+- [x] I did not add PHP, plugins, custom blocks, or a child-theme build for this assignment.
+- [x] Visitor and editor QA are complete.
+- [x] All five evidence screenshots display in this README.
+- [x] I completed the maintainability reflection.
+- [x] I committed and pushed the Week 12 handoff folder.
