@@ -7,7 +7,7 @@
 
 Briefly summarize how you customized the existing Week 11 CMS without making routine content harder for the client to maintain.
 
-[Write 2–3 sentences here.]
+[I used the "style" tab to do most of the client specs like; pallete, typography, and hiearchy. Then I used the "additional CSS" tab to include a nice Hover state to the header.]
 
 ---
 
@@ -18,51 +18,51 @@ Document the four required decisions below.
 ## 1. Global Design System
 
 **Requirement:**  
-[Which Southtown brand requirements were site-wide?]
+[Palette, Typograph, Interface, and Button states]
 
 **Location:**  
-[Global Styles / theme-level controls]
+[Body, Header, Buttons, and Links(Global)]
 
 **Change:**  
-[What did you change?]
+[I changed the palette to better fit the brand specs, I also changed the header and body fonts. I also updated the diffirent states for the buttons.]
 
 **Why this level:**  
-[Why was a global solution better than editing pages individually?]
+[Global edits where the better solution, because not only did it easy the work load on me, but it also allows for non-coders to come add things, with out doing any extra styling.]
 
 **QA:**  
-[What did you test after the global change?]
+[I tested the live site for a clean color palette, working hover/focus states, and proper flexing for diffirent viewports.]
 
 ---
 
 ## 2. Branded Reusable Pattern
 
 **Pattern:**  
-[Name the pattern.]
+[Southtown-Program Callout.]
 
 **Change:**  
-[What visual/system changes did you make?]
+[I added an optional image/media section for the client to easliy access and alter.]
 
 **Reuse:**  
-[Where did you reuse or verify the pattern?]
+[I re-used this pattern on all pages besides News]
 
 **Editor value:**  
-[How does this help a future editor update content without rebuilding the design?]
+[This gives them a pre-built template that can be pasted anywhere, and altered slightly to better fit the CTA]
 
 ---
 
 ## 3. Site-Wide Structure Customization
 
 **Shared area:**  
-[Header, footer, navigation, or other shared structure.]
+[Header]
 
 **Change:**  
-[What did you customize?]
+[I changed the overall layout of the Header & the Navagation bar]
 
 **Why this level:**  
-[Why did the change belong in shared site structure rather than on one Page?]
+[This was a design decision that was made to better represent the page, and that should be done on all pages]
 
 **QA:**  
-[Which pages did you check afterward?]
+[I checked all pages]
 
 ---
 
@@ -71,25 +71,27 @@ Document the four required decisions below.
 Complete **one** option.
 
 **Option used:**  
-[theme.json OR targeted CSS]
+[Targeted CSS]
 
 **Location:**  
-[Where the modification lives in the supplied environment.]
+[It lives in the "additional CSS' Tab]
 
 **Code / configuration snippet:**
 
-```text
-Paste only the small relevant snippet here.
+```.wp-block-site-title a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
 ```
 
 **Reason:**  
-[What legitimate requirement could not be solved cleanly through the available editor/global controls?]
+[A visable hover state was not accomplishable through the styles tab, so I used targeted CSS to make a working hover state.]
 
 **Documentation:**  
-[Which official WordPress reference helped you understand the change?]
+[hovering over the title]
 
 **QA:**  
-[How did you verify the change worked without creating new problems?]
+[I made sure there was no additional style effects or features, that would contradict my added CSS]
 
 ---
 
@@ -97,23 +99,23 @@ Paste only the small relevant snippet here.
 
 ## Visitor Experience
 
-- [ ] I tested narrow and wide viewport behavior.
-- [ ] I checked visual consistency on more than one page.
-- [ ] I checked text/link/button contrast.
-- [ ] I verified visible keyboard focus.
-- [ ] I tested navigation and links.
-- [ ] I checked that the brand system is consistent rather than page-specific.
+- [x] I tested narrow and wide viewport behavior.
+- [x] I checked visual consistency on more than one page.
+- [x] I checked text/link/button contrast.
+- [x] I verified visible keyboard focus.
+- [x] I tested navigation and links.
+- [x] I checked that the brand system is consistent rather than page-specific.
 
 ### Visitor QA Notes
 [Briefly describe one issue you found or one important verification you made.]
 
 ## Editor Experience
 
-- [ ] Routine content is still editable through WordPress.
-- [ ] The branded pattern is understandable to reuse/edit.
-- [ ] My customization did not move ordinary client content into code.
-- [ ] I performed one temporary routine content edit, previewed it, and restored the original content.
-- [ ] The site remained visually coherent after the editor test.
+- [x] Routine content is still editable through WordPress.
+- [x] The branded pattern is understandable to reuse/edit.
+- [x] My customization did not move ordinary client content into code.
+- [x] I performed one temporary routine content edit, previewed it, and restored the original content.
+- [x] The site remained visually coherent after the editor test.
 
 ### Editor QA Notes
 [Briefly describe the update you tested and what you verified.]
