@@ -3,6 +3,9 @@
 **Client:** Southtown Community Arts  
 **Role:** Junior WordPress Developer
 
+## Page Link
+[https://susane38.sg-host.com/]
+
 ## Project Overview
 
 Briefly summarize how you customized the existing Week 11 CMS without making routine content harder for the client to maintain.
@@ -118,7 +121,7 @@ Complete **one** option.
 - [x] The site remained visually coherent after the editor test.
 
 ### Editor QA Notes
-[Briefly describe the update you tested and what you verified.]
+[I tested the whole page to ensure all site wide changes were pushed site wide, as well as checking to ensure all old properties like buttons still worked as normal]
 
 ---
 
