@@ -3,18 +3,18 @@
 **WebWorks Studio**  
 **Week 13: Client Sprint 1 — Discovery & Planning**
 
-**Student:** [Your Name]  
-**Date:** [Submission Date]
+**Student:** [Julius McKinnon]  
+**Date:** [11/11/2026]
 
-> This plan is based on the supplied client brief, approved content, personas, asset notes, and course requirements. Missing client information is identified as a dependency rather than invented.
+> This plan is based on the supplied client brief, approved content, personas, asset notes, and course requirements.
 
-> **Week 13 boundary:** This document defines the problem, users, content, requirements, scope, technical direction, and production plan. It does not include production code, wireframes, visual comps, or page layouts.
+> **Week 13 boundary:** This document defines the problem, users, content, requirements, scope, technical direction, and production plan.
 
 ---
 
 # 1. Client & Project Summary
 
-Hill Country Coffee is an independent regional coffee company based in Central Texas. It offers espresso drinks, brewed coffee, cold beverages, teas, and a rotating selection of café food. The client needs a modern, responsive website because its current online information has become inconsistent, difficult to scan on mobile devices, and harder for customers to navigate. The site will serve local regulars, people looking for a café while out in the area, visitors exploring the Texas Hill Country, and customers reviewing offerings before visiting. The central problem is to make the business, menu, and visit information clear and easy to find while communicating the company's welcoming, local character. The project will prioritize mobile usability, understandable navigation, accurate approved content, accessibility, and a manageable course-scale implementation.
+Hill Country Coffee is an independent regional coffee company based in Central Texas. It offers espresso drinks, brewed coffee, cold beverages, teas, and a rotating selection of café food. The client needs a modern, responsive website because its current online information has become inconsistent, difficult to scan on mobile devices, and harder for customers to navigate. The site will serve local regulars, people looking for a café while out in the area, visitors exploring the Texas Hill Country, and customers reviewing offerings before visiting. The central solution would be to make the business, menu, and visit information clear and easy to find while communicating the company's welcoming, local character. The project will prioritize mobile usability, understandable navigation, accurate approved content, accessibility, and a manageable course-scale implementation.
 
 # 2. Prioritized Business Goals
 
@@ -22,7 +22,7 @@ Hill Country Coffee is an independent regional coffee company based in Central T
 
 **Goal:** Help customers quickly locate café/location information and confirm visit details, especially on mobile devices.
 
-**Why it matters:** Customers need practical information before deciding where and when to visit. The client specifically identifies location and hours as difficult-to-find information and names mobile usability as a priority.
+**Why it matters:** The client specifically identifies location and hours as difficult-to-find information and names mobile usability as a priority.
 
 **Evidence from the brief:** The client says location and hours should be easy to find and that customers sometimes have trouble finding basic information quickly. Maya needs opening hours and nearby café information; Daniel needs location information while planning a day trip.
 
@@ -32,13 +32,13 @@ Hill Country Coffee is an independent regional coffee company based in Central T
 
 **Why it matters:** Customers should be able to review the general offerings before visiting without struggling through dense copy, tiny documents, or images containing essential text.
 
-**Evidence from the brief:** The client says the menu should be easy to scan. The approved content supplies Espresso & Coffee, Tea & Other Drinks, and Café Food categories. Maya wants to check familiar options, while Daniel and Renee want to understand the general menu before choosing to visit.
+**Evidence from the brief:** The approved content supplies Espresso & Coffee, Tea & Other Drinks, and Café Food categories. Maya wants to check familiar options, while Daniel and Renee want to understand the general menu before choosing to visit.
 
 ## Goal 3: Communicate the brand and local identity clearly
 
 **Goal:** Help first-time visitors understand what Hill Country Coffee is and what makes its café experience distinctive.
 
-**Why it matters:** Visitors who do not already know the business need enough concise, accurate information to decide whether it fits their plans. This goal supports the client’s brand and community priorities without making the site complicated.
+**Why it matters:** Visitors who do not already know the business need enough concise, accurate information to decide whether it fits their plans.
 
 **Evidence from the brief:** The client wants the site to communicate what makes the company distinctive and its connection to the Texas Hill Country. Approved content describes quality ingredients, careful preparation, welcoming spaces, neighborly service, and community.
 
