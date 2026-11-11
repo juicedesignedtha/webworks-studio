@@ -5,7 +5,7 @@
 
 **Student:** [Julius McKinnon]  
 **Date:** [11/11/2026]
-
+**Link** [https://github.com/juicedesignedtha/webworks-studio/tree/main/week13/hill-country-coffee]
 > This plan is based on the supplied client brief, approved content, personas, asset notes, and course requirements.
 
 > **Week 13 boundary:** This document defines the problem, users, content, requirements, scope, technical direction, and production plan.
