@@ -21,36 +21,59 @@
       -->
       <nav aria-label="Primary navigation">
         <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <!-- Add only MVP destinations approved in Week 13. -->
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#locations">Locations / Plan Your Visit</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <!--
-    TODO: Build the homepage from your approved Week 13 desktop/mobile interface direction.
-    Use approved Hill Country Coffee content only.
-    -->
-
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Hill Country Coffee</p>
-        <h1>Build the approved homepage here.</h1>
-        <p>
-          Replace this starter copy with approved client content from the Week 13 project package.
-        </p>
+    <!-- TODO: Approved Week 13 homepage and MVP content areas. -->
+    <section class="hero" id="home" aria-labelledby="home-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">A Central Texas coffee experience</p>
+          <h1 id="home-title">Coffee Made for the Pace of the Hill Country</h1>
+          <p class="hero-lede">Thoughtfully prepared coffee and an easygoing café experience, inspired by the pace and landscape of the Texas Hill Country.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">View the Menu</a>
+            <a class="button button-secondary" href="#locations">Plan Your Visit</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-sun"></div><div class="art-hill art-hill-back"></div><div class="art-hill art-hill-front"></div>
+          <div class="art-cup"><span></span></div>
+          <p>GOOD COFFEE. GOOD COMPANY.</p>
+        </div>
       </div>
     </section>
-
-    <section class="section">
+    <section class="intro-strip" aria-label="Our approach">
+      <div class="container intro-inner"><p>Quality ingredients</p><span aria-hidden="true">✳</span><p>Careful preparation</p><span aria-hidden="true">✳</span><p>Neighborly hospitality</p></div>
+    </section>
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
       <div class="container">
-        <h2>Production Reminder</h2>
-        <p>
-          Build the MVP defined in your discovery plan. Do not invent additional pages,
-          features, prices, locations, or client facts.
-        </p>
+        <div class="section-heading"><p class="eyebrow">Something for your day</p><h2 id="menu-title">Explore the Menu</h2><p>From familiar coffee favorites to teas and café food, explore the offerings at Hill Country Coffee.</p></div>
+        <div class="menu-grid">
+          <article class="menu-card"><span class="card-number">01</span><h3>Espresso &amp; Coffee</h3><ul><li>Espresso</li><li>Americano</li><li>Cappuccino</li><li>Latte</li><li>Mocha</li><li>Drip Coffee</li><li>Cold Brew</li></ul></article>
+          <article class="menu-card menu-card-featured"><span class="card-number">02</span><h3>Tea &amp; Other Drinks</h3><ul><li>Hot Tea</li><li>Iced Tea</li><li>Chai</li><li>Hot Chocolate</li><li>Seasonal Beverages</li></ul></article>
+          <article class="menu-card"><span class="card-number">03</span><h3>Café Food</h3><ul><li>Breakfast pastries</li><li>Breakfast sandwiches</li><li>Toasts</li><li>Grab-and-go lunch items</li><li>Rotating baked goods</li></ul></article>
+        </div>
+        <p class="content-note">Menu categories are shown using the client-approved content. Specific prices, complete descriptions, dietary information, and availability have not been supplied.</p>
+      </div>
+    </section>
+    <section class="visit-section" id="locations" aria-labelledby="visit-title">
+      <div class="container visit-layout">
+        <div><p class="eyebrow">Make a little time for coffee</p><h2 id="visit-title">Plan Your Visit</h2><p>Hill Country Coffee is an independent regional coffee company based in Central Texas. Our cafés are designed as comfortable places to meet, work, pause, and enjoy a well-made cup.</p></div>
+        <aside class="visit-panel" aria-labelledby="visit-details-title"><h3 id="visit-details-title">Location &amp; Hours</h3><p>Confirmed location details and business hours have not yet been provided for this project.</p><p class="panel-note">This information will be added when verified details are supplied. No address, phone number, or hours have been assumed.</p></aside>
+      </div>
+    </section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-mark" aria-hidden="true"><span>HC</span><small>EST. IN THE HILL COUNTRY SPIRIT</small></div>
+        <div class="about-copy"><p class="eyebrow">Rooted in Central Texas</p><h2 id="about-title">A welcoming place to pause.</h2><p>Hill Country Coffee began with a simple idea: create neighborhood coffee spaces that feel connected to the character of Central Texas.</p><p>Good coffee does not need to be complicated. We focus on quality ingredients, careful preparation, welcoming spaces, and service that feels neighborly rather than formal.</p><ul class="value-list"><li>Quality</li><li>Hospitality</li><li>Community</li><li>Simplicity</li><li>Local connection</li></ul></div>
       </div>
     </section>
   </main>
